@@ -11,3 +11,10 @@ temp = w.temperature('celsius')["temp"]
 config_dict = owm.configuration   
 print("В городе " + place + " сейчас " + str(w.detailed_status))    
 print("Температура сейчас в районе: " + str(temp))
+
+if temp < 8:
+    print('Сейчас очень холодно, одевайся тепло!')
+elif temp <20:
+    print('Сейчас холодно, оденься потеплее.')
+else:
+	print('Температура норм, одевайся свободно.')
